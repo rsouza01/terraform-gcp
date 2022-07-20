@@ -34,6 +34,6 @@ terraform -chdir=$1 init
 terraform -chdir=$1 get
 
 #The Plan command is used to create an execution plan
-terraform apply -chdir=$1 -auto-approve
+terraform -chdir=$1 apply -auto-approve
 
 ######################################################################################
