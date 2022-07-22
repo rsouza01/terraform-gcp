@@ -28,7 +28,7 @@ fi
 
 # The Init command is used to initialize a working directory containing Terraform configuration files.
 # This is the first command that should be run after writing a new Terraform configuration
-terraform -chdir=$1
+terraform -chdir=$1 init
 
 #The Get command is used to download and update modules mentioned in the root module.
 terraform -chdir=$1 get
